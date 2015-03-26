@@ -20,6 +20,7 @@ cd
 git clone https://github.com/terurururu/centos70.git
 cd centos70
 ./run.sh
+exec $SHELL -l
 ```
 
 
