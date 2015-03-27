@@ -113,8 +113,12 @@
     - name: install nodejs
       yum: name=nodejs state=latest
       when: node_installed.rc != 0
+    - name: rstart exec
+      shell: exec $SHELL -l
 
   handlers:
     - name: restart apache
       service: name=httpd state=restarted
+    #- name: rstart exec
+    #  command: exec $SHELL -l
 
