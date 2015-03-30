@@ -11,6 +11,7 @@ sudo yum -y install git
 git clone https://github.com/terurururu/centos70.git
 cd centos70
 ./run.sh
+exec $SHELL -l 
 ```
 
 If you need to update the script, please follow the instruction below.
@@ -20,6 +21,7 @@ cd
 git clone https://github.com/terurururu/centos70.git
 cd centos70
 ./run.sh
+exec $SHELL -l 
 ```
 
 
